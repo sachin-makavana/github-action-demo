@@ -1,0 +1,12 @@
+# This is a caller workflow
+
+name: caller workflow
+
+on:
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  ci:
+    uses: sachin-makavana/Reusable-wf-demo/.github/workflows/reusable-ci.yml@main
