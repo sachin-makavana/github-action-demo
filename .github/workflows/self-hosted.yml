@@ -1,0 +1,15 @@
+name: Self-Hosted
+
+# Controls when the workflow will run
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    # The type of runner that the job will run on
+    runs-on: self-hosted-vm
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      - name: Run at self-hosted
+        run: echo "Hello, from self-hosted vm"
