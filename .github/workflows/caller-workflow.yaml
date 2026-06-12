@@ -7,6 +7,6 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
+  # This workflow contains a "build", "test" and "deploy" job.
   ci:
     uses: sachin-makavana/Reusable-wf-demo/.github/workflows/reusable-ci.yml@main
