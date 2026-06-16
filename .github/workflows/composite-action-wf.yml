@@ -1,0 +1,14 @@
+name: composite-action-caller-wf
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run composite action
+        uses: /sachin-makavana/Reusable-wf-demo/.github/composite-action@main
